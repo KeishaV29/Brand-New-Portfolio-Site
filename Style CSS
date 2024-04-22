@@ -1,0 +1,795 @@
+/*
+Colors used:
+Background Color : #F8FFEC;
+Primary Color : #37a7hc;
+Secondary Color (Russet): #FFFFFF;
+Highlight Color-1 (Pale Cerulean): #a1bbce;
+Highlight Color-2 (Black): 000000;
+*/
+
+* {
+    box-sizing: border-box;
+ }
+ 
+ 
+ header {
+    background-color: #F8FFEC;
+    padding: 10px 0 4px;
+    position: relative;
+    box-shadow: 0px 6px 10px 0px rgba(20,58,82,0.5);
+ }
+ 
+ 
+ body {
+    background-color: #F8FFEC;
+    font-family: 'Libre Baskerville', sans-serif;
+    font-size: 16px; /* Sets the font size to 16px */
+    font-weight: 400; /* Sets the font weight to 400 */
+    line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+    color: #000000;
+ }
+ 
+ 
+ h1,
+ h2,
+ h3,
+ h4 {
+    line-height: 1.4;
+ }
+ 
+ 
+ h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2.75em;
+    font-weight: 800;
+ }
+  h2 {
+    font-size: 2.25em;
+    font-weight: 700;
+ }
+  h3 {
+    font-size: 1.75em;
+    font-weight: 600;
+ }
+ 
+ 
+ h4 {
+    font-size: 1.35em;
+    font-weight: 500;
+ 
+ 
+ }img {
+    width: 100%;
+ }
+ 
+ 
+ .logo {
+    max-width: 150px;
+ }
+ 
+ 
+ .social-icon {
+    display: inline-block;
+    width: 24px;
+    margin-top: 20px;
+ }
+ 
+ 
+ .process img {
+    padding: 24px 8px;
+ }
+ 
+ 
+ a {
+    color: #000000
+    ;
+    text-decoration: none; /* No underlining */
+ }
+ 
+ 
+ a:visited { /* Visited link */
+    color: #af8386;
+ }
+ 
+ 
+ a:hover,
+ a:focus {
+    color: #a1bbce;
+    text-decoration: underline; /* Underlining when hovering over a link */
+ }
+ 
+ 
+ a:active { /* Selected link */
+    color: #143a52;
+ }
+ 
+ 
+ .button {
+    display: inline-block; /* Since the <a> tag is inline by default, we need to change this to inline-block */
+    background-color: #143a52;
+    color: #fdf7ed; /* Override the default link color */
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid #a1bbce; /* Width of the border, type, color */
+    transition: 0.2s opacity;
+ }
+ 
+ 
+ .button:visited { /* Visited link */
+    color: #fdf7ed;
+ }
+ 
+ 
+ .button:hover,
+ .button:focus {
+    opacity: 0.8; /* Reduces the opacity of the button to 80% */
+    text-decoration: none;
+ }
+ 
+ 
+ .button:active { /* Selected link */
+    color: #a1bbce;
+ }
+ 
+ 
+ .button.contact,
+ .button.resume {
+    background-color: transparent;
+    color: #143a52;
+    text-transform: uppercase;
+    border: 2px solid #143a52;
+    transition: .2s background-color, font-weight;
+ }
+ 
+ 
+ .button.contact:visited,
+ .button.resume:visited { /* Visited link */
+    color: #143a52;
+ }
+ 
+ 
+ .button.contact:hover,
+ .button.contact:focus,
+ .button.resume:hover,
+ .button.resume:focus {
+    background-color: #a1bbce;
+    font-weight: 600;
+ }
+ 
+ 
+ .button.contact:active,
+ .button.resume:active { /* Selected link */
+    color: #fdf7ed;
+ }
+ 
+ /* Layout styling */
+ 
+ 
+ .container {
+    margin: 0 16px;
+ }
+ 
+ 
+ nav > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+ }
+ 
+ 
+ nav > ul > li > a {
+    padding: 0 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #143a52;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+ }
+ 
+ 
+ nav > ul > li > a:visited {
+    color: #143a52;
+ }
+ 
+ 
+ nav > ul > li > a:hover,
+ nav > ul > li > a:focus {
+    color: #ffffff;
+    text-decoration: none;
+ }
+ 
+ 
+ nav > ul > li > a:active {
+    color: #000000
+    ;
+ }
+ 
+ 
+ .navtoggle li:not(:last-child) {
+    display: none;
+ }
+ 
+ 
+ .navtoggle, .navtoggle.responsive {
+    position: relative;
+ }
+ 
+ 
+ .navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 20px;
+    padding-right: 0;
+ }
+ 
+ 
+ .navtoggle.responsive li  {
+    display: block;
+ }
+ 
+ 
+ .navtoggle.responsive nav {
+    padding: 16px 0 0;
+ }
+ 
+ 
+ .navtoggle.responsive li  {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid rgb(20,58,82,0.5);
+ }
+  .navtoggle.responsive li:last-child  {
+    padding: 0 0 16px;
+ }
+ 
+ 
+ #hero,
+ #contact {
+    background-color: rgba(175, 131, 134, 0.5);
+    padding: 16px 0;
+    text-align: center; /* Centers text */
+ }
+ 
+ 
+ #about-title,
+ #project-title {
+    padding: 8px 0;
+    margin: 16px 0;
+    text-align: center; /* Centers text */
+ }
+ 
+ 
+ #hero span {
+    color: rgba(20,58,82,0.75);
+    font-weight: 600;
+    font-size: .8em;
+    display: block;
+    line-height: 1.2;
+    padding-top: 8px;
+ }
+ 
+ 
+ #hero h4 {
+    color: rgba(20,58,82,0.9);
+ 
+ 
+ }
+ 
+ 
+ #work h2,
+ .my-story h2,
+ #project-background h2,
+ #project-process h2 {
+    text-align: center;
+    padding: 8px 0;
+    margin: 32px 0 16px 0;
+ }
+ 
+ 
+ .skills-tools h2 {
+    text-align: center;
+    padding: 8px 0;
+    margin: 32px 0 -24px 0;
+ }
+ 
+ 
+ #project-background h3 {
+    margin: 32px 0 0 0;
+ }
+ 
+ 
+ .resume,
+ .learnings p,
+ .design-collaboration {
+    text-align: center;
+ }
+ 
+ 
+ .process-link-1 a {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin: 0 0 16px 0;
+ }
+ 
+ 
+ .process-link-2 a {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+ }
+ 
+ 
+ .background h4 {
+    margin: 24px 0 0 0;
+ }
+ 
+ 
+ .skills h4 {
+    margin: 16px 0 8px 0;
+ }
+ 
+ 
+ .learnings h4 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5em;
+    margin: 32px 0 0 0;
+ }
+ 
+ 
+ .learnings p span {
+    display: inline-block;
+    width: 100%;
+    font-weight: 600;
+    padding: 8px 0 0 0;
+    margin: 0;
+ }
+ 
+ 
+ .skills > ul {
+    list-style-type: none;
+    padding: 4px;
+    margin: 0 0 16px 0;
+ }
+ 
+ 
+ .background > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+ }
+ 
+ 
+ .test-plan-title {
+    margin: 16px 0 0 0;
+/* media queries */
+
+@media only screen and (min-width: 640px) {
+   /* @media only screen and (min-width: 640px) styling for layout */
+ 
+   .wrapper--narrow {
+     width: 100%;
+     padding: 0 2rem;
+     max-width: 60rem;
+     margin-left: auto;
+     margin-right: auto;
+   }
+ 
+   html {
+     font-size: 18px;
+   }
+ 
+   img,
+   #hero h1,
+   .about-image,
+   .about-text,
+   .about-button,
+   .design-hero-image,
+   .design-hero-text,
+   .art-hero-image,
+   .art-hero-text,
+   .world-hero-image,
+   .world-hero-text {
+     max-width: 40rem;
+   }
+ 
+   /* @media only screen and (min-width: 640px) styling for header */
+ 
+   header {
+     display: flex;
+     align-items: center;
+     justify-content: end;
+     border-radius: 0;
+   }
+ 
+   .hamburger-menu {
+     display: none;
+   }
+ 
+   .navbar {
+     background-color: transparent;
+     width: 100%;
+     height: auto;
+     box-shadow: none;
+     display: flex;
+     align-items: center;
+     justify-content: flex-end;
+     position: relative;
+     top: 50%;
+     left: 0;
+   }
+ 
+   nav .fa-bars,
+   .change .fa-xmark {
+     display: none;
+   }
+ 
+   .nav-list {
+     display: flex;
+     align-items: center;
+   }
+ 
+   .nav-item {
+     width: auto;
+     margin: 0 1rem 0 0;
+   }
+ 
+   /* Media 640 styling for hero  */
+ 
+   #hero .buttons {
+     max-width: 40rem;
+     padding-left: 1rem;
+   }
+ 
+   #hero .buttons ul,
+   #zen .prototype .buttons ul {
+     display: flex;
+     flex-direction: row;
+     justify-content: left;
+   }
+ 
+   #hero .buttons ul li {
+     width: 100%;
+     margin-right: 1rem;
+   }
+ 
+   /* Media 640 styling for about  */
+ 
+   .about-grid {
+     grid-template-areas:
+       "about-text about-text about-text about-text about-text about-text"
+       ". about-button about-button about-button about-button .";
+   }
+ 
+   .about-text,
+   .about-button {
+     width: 100%;
+     margin-left: auto;
+     margin-right: auto;
+     max-width: 30rem;
+   }
+ 
+   .about-button {
+     display: flex;
+     justify-content: center;
+   }
+ 
+   /* Media 640 styling for skills  */
+ 
+   #skills {
+     padding-bottom: 2rem;
+   }
+ 
+   .skills-grid {
+     grid-template-areas:
+       "content-UX content-UX content-UX content-visual content-visual content-visual"
+       "content-tools content-tools content-tools . . .";
+   }
+ 
+   .content-UX,
+   .content-visual,
+   .content-tools {
+     max-width: 30rem;
+   }
+ 
+   /* Media 640 styling for grid-six  */
+ 
+   .grid-six {
+     gap: 2rem;
+   }
+ 
+   /* Media 640 styling for design  */
+ 
+   #design {
+     overflow: hidden;
+   }
+ 
+   .design-hero-grid {
+     grid-template-areas: "design-hero-text design-hero-text design-hero-text design-hero-text design-hero-text design-hero-text";
+   }
+ 
+   .design-hero-text {
+     max-width: 30rem;
+   }
+ 
+   .cards-grid {
+     grid-template-areas:
+       "card1 card1 card1 card1 card1 card1"
+       "card2 card2 card2 card2 card2 card2"
+       "card3 card3 card3 card3 card3 card3"
+       "card4 card4 card4 card4 card4 card4";
+   }
+ 
+   /* Media 640 styling for art */
+ 
+   #art {
+     overflow: hidden;
+   }
+ 
+   .art-hero-grid {
+     grid-template-areas: "art-hero-text art-hero-text art-hero-text art-hero-text art-hero-text art-hero-text";
+   }
+ 
+   /* Media 640 styling for Projects */
+ 
+   .project h2,
+   .project h3 {
+     max-width: 40rem;
+     margin-left: auto;
+     margin-right: auto;
+   }
+ 
+   .comps .pros-grid {
+     padding: 0 2rem 2rem 2rem;
+   }
+ 
+   .process {
+     padding-bottom: 1rem;
+   }
+ 
+   .showcase img {
+     max-width: 60rem;
+     margin-left: auto;
+     margin-right: auto;
+   }
+ 
+   .showcase .img-sm {
+     max-width: 30rem;
+   }
+ 
+   /* media 640 styling for The Expert App project */
+ 
+   #TheExpertApp h1 {
+     font-size: 3.998rem;
+   }
+ 
+   #TheExpertApp .prototype .buttons .button,
+   #TheExpertApp .prototype .buttons .button-secondary {
+     max-width: 90%;
+   }
+ 
+   #TheExpertApp .prototype .buttons li {
+     align-items: center;
+   }
+ 
+   .saduser {
+     padding: 2rem;
+   }
+ 
+   .saduser .p-sec-grid-1,
+   .saduser .p-sec-grid-2,
+   .saduser .p-sec-grid-3,
+   .saduser .p-sec-grid-4 {
+     display: flex;
+     justify-content: center;
+   }
+ 
+   .saduser img {
+     max-width: 40rem;
+     margin-left: auto;
+     margin-right: auto;
+   }
+ }
+ 
+ @media only screen and (min-width: 1024px) {
+ 
+   /* Media 1024 styling for textile-trans */
+ 
+   .textile-trans-img-1,
+   .textile-trans-img-2,
+   .textile-trans-img-3,
+   .textile-trans-img-4,
+   .textile-trans-img-5 {
+     height: 44rem;
+   }
+ 
+   /* Media 1024 styling for hero */
+ 
+   #hero h1 {
+     padding-top: 7rem;
+   }
+ 
+   #hero .buttons {
+     margin-bottom: 3rem;
+   }
+ 
+   #hero .buttons .button-secondary {
+     margin-left: 1rem;
+   }
+ 
+   /* Media 1024 styling for grids */
+ 
+   .grid-six {
+     gap: 3rem;
+     padding: 0 3rem;
+   }
+ 
+   /* Media 1024 styling for about */
+ 
+   #hero,
+   #about {
+     margin: 0;
+   }
+ 
+   #hero h1 {
+     max-width: 40rem;
+   }
+ 
+   #about {
+     padding-bottom: 2rem;
+   }
+ 
+   .about-grid {
+     grid-template-areas:
+       ". about-text about-text about-text about-text ."
+       ". about-button about-button about-button about-button .";
+   }
+ 
+   .about-text {
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-end;
+     max-width: 40rem;
+   }
+ 
+   .about-text p {
+     margin-bottom: 0;
+   }
+ 
+   #about .button-secondary {
+     max-width: fit-content;
+   }
+ 
+   /* Media 1024 styling for skills */
+ 
+   .skills-grid {
+     grid-template-areas: "content-UX content-UX content-visual content-visual content-tools content-tools";
+   }
+ 
+   /* Media 1024 styling for design */
+ 
+   .design-hero-grid {
+     grid-template-areas: ". design-hero-text design-hero-text design-hero-text design-hero-text .";
+   }
+ 
+   .design-hero-text {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     max-width: 40rem;
+   }
+ 
+   .card {
+     max-width: 40rem;
+   }
+ 
+   .cards-grid {
+     margin: 2rem 0 3rem 0;
+     grid-template-areas:
+       "card1 card1 card1 card2 card2 card2"
+       "card3 card3 card3 card4 card4 card4";
+   }
+ 
+   /* Media 1024 styling for art */
+ 
+   .art-hero-grid {
+     grid-template-areas: ". art-hero-text art-hero-text art-hero-text art-hero-text .";
+   }
+ 
+   .art-hero-text {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     max-width: 40rem;
+   }
+ 
+ 
+   .world-hero-text {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     max-width: 40rem;
+   }
+ 
+   /* Media 1024 styling for projects */
+ 
+   .pros-grid {
+     grid-template-areas: "pros-1 pros-1 pros-2 pros-2 pros-3 pros-3";
+   }
+ 
+   .specs .pros-grid {
+     max-width: 50rem;
+     margin-left: auto;
+     margin-right: auto;
+     padding: 2rem;
+   }
+ 
+   .comps .pros-grid {
+     padding: 2rem;
+     margin-left: auto;
+     margin-right: auto;
+   }
+ 
+   .three-cards-grid {
+     grid-template-areas: "card1 card1 card2 card2 card3 card3";
+     gap: 1rem;
+   }
+ 
+   /* Media 1024 styling for Zen project */
+ }
+ 
+ @media only screen and (min-width: 1440px) {
+   img,
+   #hero h1,
+   #hero .buttons ul,
+   .about-image,
+   .about-text,
+   .about-button,
+   .design-hero-image,
+   .design-hero-text,
+   .art-hero-image,
+   .art-hero-text,
+   .world-hero-image,
+   .world-hero-text {
+     max-width: 40rem;
+   }
+ 
+   /* Media 1440 styling for skills */
+ 
+   #skills {
+     padding-bottom: 4rem;
+   }
+ 
+   /* Media 1440 styling for grids */
+ 
+   /* Media 1440 styling for cards grid */
+ 
+   .cards-grid {
+     grid-template-columns: repeat(12, 1fr);
+     gap: 1rem;
+     padding-left: 1rem;
+     padding-right: 1rem;
+     grid-template-areas: "card1 card1 card1 card2 card2 card2 card3 card3 card3 card4 card4 card4";
+   }
+ 
+   .three-cards-grid {
+     grid-template-areas: "card1 card1 card1 card1 card2 card2 card2 card2 card3 card3 card3 card3";
+   }
+ 
+   /* Media 1440 styling for footer */
+ 
+   .footer-hero-image,
+   .footer-hero-text {
+     max-width: 40rem;
+   }
+ 
+   #footer .buttons .button {
+     max-width: 18rem;
+   }
+ 
+   /* Media 1440 styling for projects */
+ 
